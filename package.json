@@ -2,8 +2,11 @@
   "name": "boilerplate",
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "client:dev": "vite",
+    "server:dev": "ts-node --project tsconfig.server.json src/server",
+    "server:build": "tsc --project tsconfig.server.json",
+    "client:build": "vite build",
+    "build": "npm run client:build && npm run server:build",
     "serve": "vite preview",
     "prepare": "husky install",
     "test": "prettier --check . && eslint . && stylelint \"**/*.css\""
