@@ -13,8 +13,7 @@
     "test": "tsc && prettier --check . && eslint . && stylelint \"**/*.css\"",
     "storybook": "start-storybook -s src/app/assets -p 6006",
     "start": "node dist/server.js",
-    "build-storybook": "build-storybook",
-    "storybook": "start-storybook -s src/app/assets -p 6006"
+    "build-storybook": "build-storybook"
   },
   "devDependencies": {
     "@babel/core": "^7.14.3",
@@ -22,6 +21,7 @@
     "@storybook/addon-essentials": "^6.2.9",
     "@storybook/addon-links": "^6.2.9",
     "@storybook/react": "^6.2.9",
+    "@types/express": "^4.17.12",
     "@types/node": "^15.0.2",
     "@types/react": "^17.0.6",
     "@types/react-dom": "^17.0.5",
